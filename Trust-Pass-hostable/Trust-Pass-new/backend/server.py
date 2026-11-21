@@ -94,6 +94,8 @@ class CompatRow(dict):
 
 
 def compat_row_factory(cursor):
+    if cursor.description is None:  # commands such as SET return no rows
+        return lambda values: values
     columns = [column.name for column in cursor.description]
     return lambda values: CompatRow(zip(columns, values))
 

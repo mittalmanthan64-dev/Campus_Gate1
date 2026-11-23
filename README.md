@@ -58,3 +58,7 @@ This is a demo. Anyone who opens the public site can see these credentials and t
 - put real accounts behind Supabase Auth or your campus identity provider.
 
 It does not implement OIDC/PKCE, passkeys, a roster import or scannable QR codes. The rotating pass is a signed token checked by the in-app verifier.
+
+Credits : Himanshi --> https://github.com/himanshigoyal774
+          Ishita --> https://github.com/M-Ishita15
+          Manan --> https://github.com/Manan-star13
